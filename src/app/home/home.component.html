@@ -1,0 +1,25 @@
+<div class="body">
+  <div class="left">
+  </div>
+  <div class="center">
+
+    <div class="item" *ngFor="let item of GoodsList">
+      <div class="block">
+
+        <div class="img">
+          <div class="bg" [ngStyle]="{'background-image':'url('+item.imgUrl+')'}"></div>
+        </div>
+        <div class="goodsName">
+          {{item.name}}
+        </div>
+        <div class="priceStock">
+          <span>Price: $ {{item.price}}</span>
+          <span>
+            <button (click)="handlerAddCart(item)">add to cart</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>

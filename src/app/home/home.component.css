@@ -1,0 +1,61 @@
+p {
+    color: thistle;
+    margin-top: 200px;
+}
+
+.body {
+    display: flex;
+}
+
+.body .left,
+.body .right {
+    width: 10vw;
+}
+
+.body .center {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+.body .center .item {
+    width: calc(20% - 5px);
+}
+
+.body .center .item .block {
+    padding: 10px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body .center .item .block .img {
+    height: 230px;
+    width: 100%;
+}
+
+.body .goodsName {
+    color: #555;
+    position: relative;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.body .priceStock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body .center .btnAdd {
+    border: unset;
+}

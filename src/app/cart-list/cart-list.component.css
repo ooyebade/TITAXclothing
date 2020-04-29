@@ -1,0 +1,45 @@
+.body {
+  display: flex;
+}
+
+.body .left,
+.body .right {
+  width: 15vw;
+}
+
+.body .center {
+  flex: 1;
+}
+
+.body .center .item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.body .center .item>div {
+  margin: 2px 5px;
+  width: 60px;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.body .center .item .img {
+  width: 40px;
+  height: 50px;
+}
+
+.goodsName {
+  flex: 1;
+}
+
+.btnDelete {
+  width: 80px;
+}

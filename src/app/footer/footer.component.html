@@ -1,0 +1,18 @@
+<footer class="footer">
+    <!-- body of Card subscribe -->
+    <div class="subscribe" *ngIf="!isSubscribe">
+
+        <!-- 	Title Card subscribe  -->
+        <h2>subscribe</h2>
+        <!-- 	Description -->
+        <p> to our newsletter to get updates about our new products </p>
+        <!-- <form> -->
+        <!-- 	input Email -->
+        <input type="email" [(ngModel)]="EmailAddress" name="Email" placeholder="Enter your email address" autofocus autocomplete required checked>
+
+        <!-- 	subscribe Button -->
+        <!-- <button (click)="handlerSubmit">Subscribe</button> -->
+        <button (click)="handlerSubmit()">Subscribe</button>
+        <!-- </form> -->
+    </div>
+</footer>

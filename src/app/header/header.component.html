@@ -1,0 +1,52 @@
+<!--==main header==-->
+<div id="header">
+  <div id="main-header">
+    <!--==logo==-->
+    <div id="logo">
+      <span id="name">TITAXclothing</span>
+    </div>
+
+    <!--==search bar==-->
+    <div id="search">
+      <form action="" class="search-bar">
+        <input type="search" name="search" pattern=".*\S.*" required  [(ngModel)]="keyword" >
+        <button class="search-button" type="submit" (click)="handlerSearch()">
+          <span>Search</span>
+        </button>
+      </form>
+    </div>
+
+    <!--==menu==-->
+    <div id="menu">
+      <div class="account">
+        <button type="button" class="btn" [routerLink]="['/account']">Account</button>
+      </div>
+      <div class="checkout">
+        <button type="button" class="btn" [routerLink]="['/cartlist']">Cart {{total}}</button>
+      </div>
+    </div>
+    <!--==navigation==-->
+    <div id="mensandwomens">
+      <a class="dropbtn" [routerLink]="['/home']">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Women's</button>
+        <div class="dropdown-content">
+          <a [routerLink]="['/home']" [queryParams]="{id:1}">Coats & Jackets</a>
+          <a [routerLink]="['/home']" [queryParams]="{id:2}">Pants & Jeans</a>
+          <a [routerLink]="['/home']" [queryParams]="{id:3}">Sweaters & Hoodeis</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Men's</button>
+        <div class="dropdown-content">
+          <a [routerLink]="['/home']" [queryParams]="{id:1}">Coats & Jackets</a>
+          <a [routerLink]="['/home']" [queryParams]="{id:2}">Pants & Jeans</a>
+          <a [routerLink]="['/home']" [queryParams]="{id:3}">Sweaters & Hoodeis</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

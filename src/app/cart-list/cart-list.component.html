@@ -1,0 +1,26 @@
+<div class="body">
+  <div class="left"></div>
+  <div class="center">
+    <div class="item">
+      <div class="no">Number</div>
+      <div class="imgUrl">
+        Picture
+      </div>
+      <div class="total">Quantity</div>
+      <div class="goodsPrice">Price</div>
+      <div class="goodsName">Product Name</div>
+      <div class="btnDelete"> </div>
+    </div>
+    <div class="item" *ngFor="let item of cartList;index as i">
+      <div class="no">{{i+1}}</div>
+      <div class="img">
+        <div class="bg" [ngStyle]="{backgroundImage:'url('+item.goodsInfo.imgUrl+')'}"></div>
+      </div>
+      <div class="total">{{item.total}}</div>
+      <div class="goodsPrice">￥{{item.goodsInfo.price}}</div>
+      <div class="goodsName">{{item.goodsInfo.name}}</div>
+      <div class="btnDelete"> <button (click)="handlerDelete(i,item)"> delete</button></div>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>

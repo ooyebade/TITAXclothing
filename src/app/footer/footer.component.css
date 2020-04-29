@@ -1,0 +1,88 @@
+/* properties of the page body */
+body {
+  background-image: linear-gradient(180deg, #9880FC 100%, #7FCCFC 0%);
+  font-family: Courier;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+/* properties of the subscribe card */
+.subscribe {
+  box-shadow: 0 0 26px 1px #7c677f;
+  padding: 50px 50px 50px 50px;
+  margin: 5em auto 0em auto;
+  border-radius: 10px;
+  text-align: center;
+  width: 900px;
+  min-height: 200px;
+  height: 10px;
+  color: #445963;
+
+}
+
+
+/* Title Card subscribe  */
+.subscribe h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 27px;
+}
+
+/* Description of the "card subscribe" */
+.subscribe p {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0;
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+/* email input */
+input[type=email] {
+  font-family: 'PT Sans', sans-serif;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  color: #445963;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  margin-top: 18px;
+  font-size: 15px;
+  font-style: italic;
+  border-bottom: 2px solid #7c677f;
+}
+
+/* Button transmitter subscribe */
+button {
+  box-shadow: 0 0 26px 1px #7c677f;
+  padding: 12px 45px 12px 45px;
+  transition: 0.3s linear;
+  background: #7c677f;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translatey(-3px);
+  box-shadow: 0 0 6px #a1c3fe;
+}
+
+button:active {
+  transform: translatey(3px);
+  box-shadow: 0 0 0px #a1c3fe;
+}
+
+.footer {
+  height: 50px;
+  /* margin-top: -50px; */
+}
